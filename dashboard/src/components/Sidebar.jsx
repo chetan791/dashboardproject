@@ -4,8 +4,11 @@ import logo from "../assets/logo.png";
 
 export const Sidebar = () => {
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
-      <DIV style={{ color: "red" }}>
+    <div
+      id="sidebar"
+      style={{ display: "flex", flexDirection: "column", height: "100%" }}
+    >
+      <DIV>
         <div id="logo">
           <img src={logo} alt="" />
         </div>

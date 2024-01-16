@@ -4,7 +4,7 @@ import DP from "../assets/Ellipse 8.png";
 import { useSelector } from "react-redux";
 import ChartComponent from "./ChartComponent";
 import PieChartComponent from "./PieChartComponent";
-import { Table, TableChart } from "./TableChart";
+import { TableChart } from "./TableChart";
 
 export const Content = () => {
   const [currQuarter, setCurrQuarter] = useState("Q1");
@@ -478,20 +478,35 @@ const NAV = styled.div`
 `;
 
 const TimeLineData = styled.div`
-  display: flex;
+  width: 946px;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 0.5fr;
+  column-gap: 10px;
   justify-content: space-around;
+  /* border: 1px solid black; */
+  margin-left: 10px;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 350px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4 (1fr);
+    gap: 10px;
+  }
 
   .data-box {
     display: flex;
-    width: 267px;
-    height: 134px;
+    /* height: 134px; */
     flex-direction: column;
     align-items: start;
     flex-shrink: 0;
     /* border: 1px solid black; */
     border-radius: 10px;
     border-radius: 12px;
-    padding: 10px;
+    /* padding: 10px; */
     border: 1px solid #ebebeb;
     background: #fff;
     box-shadow: 0px 0.599px 5.32px 0px rgba(0, 0, 0, 0.01),
@@ -500,22 +515,22 @@ const TimeLineData = styled.div`
   }
 
   .data-box div {
-    /* border: 1px solid red; */
+    /* border: 1px solid red;  */
     padding: 10px 0px 10px 20px;
     height: 50%;
+    /* font-size: smaller; */
     width: 90%;
-    /* border: 1px solid #ebebeb; */
   }
 
   .colorfulbox {
+    /* width: 60%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #e03021;
     background-color: #f5e5e3;
-    border-left: 6px solid #e03021;
     border-radius: 8px;
     padding: 10px;
+    font-size: 20px;
   }
 `;
 

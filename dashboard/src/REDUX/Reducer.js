@@ -303,13 +303,6 @@ const init = {
       "R/E": 165.11241755090336,
       "YOY R/E Change": 26,
     },
-    {
-      Month: "Aug",
-      Year: 2023,
-      Emissions: 5258,
-      "R/E": 131.1804868771396,
-      "YOY R/E Change": 11,
-    },
   ],
   Suppliers: [
     { Supplier: "Reliance", TotalEmissions: 10585 },

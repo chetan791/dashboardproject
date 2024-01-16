@@ -50,7 +50,7 @@ export const TableChart = () => {
       >
         <thead>
           <th>MONTHS</th>
-          <th>emissions(in CO2e)</th>
+          <th>EMISSIONS(in CO2e)</th>
           <th>REVENUE/EMISSION RATIO</th>
           <th>YOY R/E Change</th>
         </thead>
@@ -77,7 +77,9 @@ export const TableChart = () => {
 
 const Table = styled.div`
   width: 100%;
-  border-radius: 10px;
+  /* height: fit-content; */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   box-shadow: 0px 0.599px 5.32px 0px rgba(0, 0, 0, 0.01),
     0px 2.01px 17.869px 0px rgba(0, 0, 0, 0.01),
     0px 9px 80px 0px rgba(0, 0, 0, 0.02);
@@ -86,13 +88,13 @@ const Table = styled.div`
   border: 1px solid #d8d8d8;
 
   #head {
-    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 19px;
+    padding: 10px;
     margin: 0;
-    /* border: 1px solid red;  */
+    font-weight: 600;
+    /* border: 1px solid; */
   }
 
   #head div {
@@ -102,7 +104,7 @@ const Table = styled.div`
   }
 
   #download {
-    border: 1px solid #02ab6c;
+    border: 2px solid #02ab6c29;
     padding: 5px 15px;
     border-radius: 10px;
   }
@@ -113,7 +115,7 @@ const Table = styled.div`
   }
 
   table {
-    height: 85%;
+    height: 89%;
   }
 
   thead {
@@ -124,10 +126,12 @@ const Table = styled.div`
   }
 
   thead th {
-    padding: 5px 9px;
+    padding: 10px 9px;
     margin: 0;
     color: #0000007a;
-    border: 1px solid grey;
+    border: 1px solid #d7d7d7;
+    background-color: #fafafa;
+    text-transform: uppercase;
   }
 
   td {

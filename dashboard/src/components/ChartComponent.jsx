@@ -65,6 +65,9 @@ const ChartComponent = ({ groupedBarData, lineChartData }) => {
   return (
     <div
       style={{
+        width: "946px",
+        // height: "447px",
+        flexShrink: "0",
         margin: "10px",
         borderRadius: "12px",
         border: "1px solid #EBEBEB",
@@ -75,7 +78,15 @@ const ChartComponent = ({ groupedBarData, lineChartData }) => {
       }}
     >
       <h3 style={{ padding: "20px 30px 0px 30px" }}>Emission/Revenue</h3>
-      <canvas style={{ padding: "0px 30px 30px 30px" }} ref={chartRef} />
+      <canvas
+        style={{
+          padding: "0px 30px 30px 30px",
+          width: "946px",
+          // height: "447px",
+          flexShrink: "0",
+        }}
+        ref={chartRef}
+      />
     </div>
   );
 };
